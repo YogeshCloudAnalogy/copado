@@ -1,0 +1,31 @@
+<apex:page >
+    <div>
+        <p>Subscribe to SampleMessageChannel </p>
+        <button onclick="subScription()">Subscribe</button>
+        <p>Unsubscribe from subscription</p>
+        <button onclick="unsubscribeMC()">Unsubscribe</button>
+        <br/>
+        <br/>
+        <p>Received message:</p>
+        <textarea id="msg" rows="10" style="disabled:true;resize:none;width:100%;" />
+    </div>
+<script>
+     var SampleMessage = "{!$MessageChannel.SampleMessageChannel__c}";
+     var  subscriptionToMC;
+     function onMessageReceived(message){
+         var el = document.querySelector("#msg");
+         el.innerHTML = JSON.stringify(message);
+     }
+     function subScription(){
+        if(!subscriptionToMC){
+            subscriptionToMC = sforce.one.subscribe(SampleMessage,onMessageReceived,{scope: "APPLICATION"});
+        }
+     }
+     function unsubscribeMC(){
+        if(subscriptionToMC){
+            sforce.one.unsubscribe(subscriptionToMC);
+            subscriptionToMC = null;
+        }
+     }
+</script>
+</apex:page>

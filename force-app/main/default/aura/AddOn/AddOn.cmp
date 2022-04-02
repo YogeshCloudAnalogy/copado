@@ -1,0 +1,35 @@
+<aura:component  implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="rows" type="List" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <lightning:card title="Contact">
+        <aura:iteration items="{!v.rows}" var="row">
+            <lightning:recordEditForm objectApiName="Contact" aura:id="contactForm">
+                <div class="slds-grid slds-gutters slds-p-horizontal_small">
+                    <div class="slds-col slds-size_1-of-5">
+                        <lightning:inputField fieldName="FirstName" />
+                    </div>
+                    <div class="slds-col slds-size_1-of-5">
+                        <lightning:inputField fieldName="LastName" />
+                    </div>
+                    <div class="slds-col slds-size_1-of-5">
+                        <lightning:inputField fieldName="Email" />
+                    </div>
+                    <div class="slds-col slds-size_1-of-5">
+                        <lightning:inputField fieldName="AccountId" />
+                    </div>
+                    <div class="slds-col slds-size_1-of-5 slds-m-top_medium slds-grid" data-id="{! row.Id}">
+                        <div  onclick="{!c.handleAddrow}">
+                            <lightning:icon iconName="action:new" alternativeText="Add row" title="Add row"  size="small" />
+                        </div>
+                        <div class="slds-m-left_x-small" data-id="{!row.Id}" onclick="{!c.handleRemoveRow}">
+                            <lightning:icon iconName="action:delete" alternativeText="Delete Row" title="Delete Row" size="small" />
+                        </div>
+                    </div>
+                </div>
+            </lightning:recordEditForm>
+        </aura:iteration>
+        <div class="slds-align_absolute-center">
+            <lightning:button variant="brand" label="submit" title="submit" onclick="{! c.handleClick }"/>
+        </div>
+    </lightning:card>
+</aura:component>

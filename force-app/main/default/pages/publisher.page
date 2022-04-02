@@ -1,0 +1,16 @@
+<apex:page >
+    <script>
+        var SampleMessage = "{!$MessageChannel.SampleMessageChannel__c}"
+        function handleClick(){
+            const message ={
+                recordId : "hello",
+                recordData : "this is recordData"
+            }
+            sforce.one.publish(SampleMessage, message);
+        }
+    </script>
+    <div>
+        <p>Publish SampleMessageChannel</p>
+        <button onclick="handleClick()">Publish</button>
+    </div>
+</apex:page>

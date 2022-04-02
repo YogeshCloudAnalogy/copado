@@ -1,0 +1,19 @@
+<aura:component implements="lightning:availableForChatterExtensionComposer"
+controller="caseController">
+<aura:handler name="init" value="{!this}" action="{!c.init}"/>
+<aura:attribute name="items" type="List" description="Contains a list of items for
+user to select."/>
+<div class="container">
+<aura:iteration items="{!v.items}" var="item" indexVar="index">
+<div class="itemContainer" onclick="{!c.selected}">
+<div class="itemLeft">
+<img class="itemIcon" src="https://login.salesforce.com/logos/Standard/record/logo.svg"></img>
+</div>
+<div class="itemRight">
+<div class="itemTitle">{!item.title}</div>
+<div class="itemDescription">Case Number: {!item.caseNo}</div>
+</div>
+</div>
+</aura:iteration>
+</div>
+</aura:component>

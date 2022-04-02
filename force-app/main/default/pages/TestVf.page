@@ -1,0 +1,18 @@
+<apex:page standardController="User" extensions="HB_BS_UserController" standardStylesheets="false" showHeader="false" >
+    <apex:pageMessages />
+        <!-- <h1>Edit User {!$User.FirstName}</h1> -->
+        <p>{!userNameMessage}</p>
+        <apex:form >
+            <apex:pageBlock >
+                <apex:pageBlockSection >
+                <apex:inputField label="The Name" value="{!User.FirstName }"/>
+                <apex:inputField label="LastName" value="{!User.LastName }"/>
+               
+            </apex:pageBlockSection>
+            </apex:pageBlock>
+            
+        </apex:form> 
+
+
+
+</apex:page>

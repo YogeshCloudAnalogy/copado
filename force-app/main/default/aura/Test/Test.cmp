@@ -1,0 +1,17 @@
+<aura:component controller = "KeyContactsInHierarchyController" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="ContactList" type="Contact[]" />
+    <aura:attribute name="columns" type="List"/>
+    <aura:handler name="init" value="{!this}" action="{!c.myAction}" />
+    <aura:attribute name="recordId" type="Id" />
+    <lightning:card iconName="standard:work_capacity_usage" title="Key Contacts in Client Hierarchy">
+        <aura:if isTrue="{!not(empty(v.ContactList))}">
+            <lightning:datatable data="{!v.ContactList }"
+                                 columns="{!v.columns }" 
+                                 keyField="Id"
+                                 hideCheckboxColumn="true"/>
+            <aura:set attribute="else">
+                <div Style="text-align : center"> There are no key contacts identified</div>
+            </aura:set>
+        </aura:if> 
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,13 @@
+<template>
+    <lightning-tabset active-tab-value={activeTab}>
+        <div>
+           <lightning-tab label="Create agreement"  value="1" onactive={handleActive}>
+               <c-login ontabvaluechange={handleActiveTab} ></c-login>
+           </lightning-tab>
+          
+           <lightning-tab label="Resume Agreement"  value="2" onactive={handleActive}>
+                <c-signup ontabvaluechange={handleActiveTab} ></c-signup>
+           </lightning-tab>
+       </div>
+   </lightning-tabset>
+</template>

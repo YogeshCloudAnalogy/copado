@@ -1,0 +1,191 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
+    <ltng:require 
+        styles="{!join(',', 
+        $Resource.olivercss  + '/olivercss/fontcss.css', 
+        $Resource.olivercss + '/olivercss/oj_style.css')}"
+        />
+        <body class="selectize_init">
+
+            <div id="body" class="mm-page mm-slideout">
+                
+                <header id="header" class="header">
+            <div class="header-wrapper">
+                <div class="header-logo-wrapper">
+                    <div class="header-logo">
+                        <a href="./index.html"></a>
+                    </div>
+                    <div class="header-lang-current">
+                        <span>en</span>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        <ul class="format header-lang">
+                            <li class="uk active">
+                                <a href="/">English</a>
+                            </li>
+                            <li class="it ">
+                                <a href="/">Italian</a>
+                            </li>
+                            <li class="de ">
+                                <a href="/">German</a>
+                            </li>
+                            <li class="ne ">
+                                <a href="/">Dutch</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-content">
+                    <nav class="header-nav hidden-sm hidden-xs">
+                        <ul class="format navigation_list"><li class="submenu"><a href="https://www.oliverjames.com/jobs" target="_self" class="nav-link">Job Search</a><div class="wrapper"><div class="row row-eq-height"><div class="col-md-6 header-menu"><ul class="submenu format"><li class="dropdown-item"><a href="https://www.oliverjames.com/disciplines/accountancy-and-finance" target="_self" class="nav-link">Accountancy &amp; Finance </a></li><li class="dropdown-item"><a href="https://www.oliverjames.com/disciplines/actuarial" target="_self" class="nav-link">Actuarial</a></li><li class="dropdown-item"><a href="https://www.oliverjames.com/disciplines/transformation-and-change-management" target="_self" class="nav-link">Transformation &amp; Change Management</a></li><li class="dropdown-item"><a href="https://www.oliverjames.com/disciplines/risk-and-compliance" target="_self" class="nav-link">Risk &amp; Compliance</a></li><li class="dropdown-item"><a href="https://www.oliverjames.com/disciplines/technology" target="_self" class="nav-link">Technology</a></li><li class="dropdown-item"><a href="https://www.oliverjames.com/disciplines/underwriting-and-claims" target="_self" class="nav-link">Underwriting &amp; Claims</a></li></ul></div><div class="col-md-3 header-figure"><figure>
+                        <img alt="Males working together" src="./images/image-2021-03-31T12-07-11.927Z.jpg" />
+                    </figure></div><div class="col-md-3 header-text"><article>
+                        <h4>Job Search</h4><p class="MsoNormal"><span>Opportunities that suit your lifestyle,  aspirations and needs; whether you're interested in permanent, contract, consulting, temp or temp-to-perm.</span></p><p class="MsoNormal"><span>Our </span>consultants are technical experts in their specific job functions and will support <span>the ongoing development of your career, providing</span> access to all relevant opportunities across our client base. </p><p><a href="https://www.oliverjames.com/jobs">View all</a></p>
+                    </article></div></div></div></li><li class="dropdown-item"><a href="https://www.oliverjames.com/work-with-oj" target="_self" class="nav-link">Work with OJ</a></li><li class="dropdown-item"><a href="https://www.oliverjames.com/professionals" target="_self" class="nav-link">OJ Professionals</a></li><li class="dropdown-item"><a href="https://workforus.ojassociates.com/" target="_self" class="nav-link">Work for OJ</a></li><li class="dropdown-item"><a href="https://www.oliverjames.com/oj-hub" target="_self" class="nav-link">OJ Hub</a></li><li class="dropdown-item"><a href="https://www.oliverjames.com/our-offices" target="_self" class="nav-link">Contact</a></li></ul>    
+                    </nav>
+                    <nav class="header-user hidden-sm hidden-xs">
+                        <ul class="format">
+                            
+                                <li>
+                                    <a class="button" href="./login.html">
+                                        <span>Login</span>
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    </nav>
+                    <nav id="utility-nav" class="hidden-lg hidden-md visible-xs visible-sm">
+                        <a class="mobile-btn" href="https://www.oliverjames.com/#menu">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        
+                    <section id="main-banner" class="main-banner ">
+            <div class="container-banner slick-initialized slick-slider">
+                <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 100%;">
+                <div class="banner-slide slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 100%; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;">
+                    <figure class="bg-img  ">
+                        <img alt="Man with bike stood next to bench with beautiful view" src="./images/image-2021-03-25T00-38-12.646Z.jpg" />
+                    </figure>
+                    <div class="container">
+                        <header>
+                            <h1 align="center">Welcome to your Impel Portal from Oliver James​</h1>
+                        </header>
+                        <div class="wrap-content">
+                            <aside id="inline-search" class="inline-form">
+                                    <div class="form">
+        
+                                       <div class="section-footer">
+                                        <a href="./login.html" class="button secondary" style="margin-right:8px; margin-bottom:18px;max-width: 202px;" tabindex="0">Login Now</a>
+                                          <a href="./register.html" class="button primary" style="margin-right:8px; margin-bottom:18px;max-width: 202px;" tabindex="1">Register</a>
+                                        </div>
+        
+                                    </div>
+                                </aside>
+                                </div>
+                    </div>
+                </div></div></div>
+            </div>
+        </section>    
+         <section id="content">
+        <section id="about-oliver" class="section ">
+            <div class="container">
+                <blockquote>
+                    <header class="section-header">
+                        <h2>We are Oliver James</h2>
+                    </header>
+                    <ul class="format no-pointer ">
+                        <li class="active" data-item=".tab-one">
+                            <div class="nav-item"><p class="MsoNormal">We know what the right job can do</p></div>
+                        </li>
+                    </ul>
+                        <p class="MsoNormal">The right job is so much more than a place of work, it's a choice that opens you up to new opportunities, new experiences, new people and new ways of thinking.</p><p class="MsoNormal">We know that the right job can truly provide you with a new way of living; matching up your career ambitions with your lifestyle aspirations, without compromise. </p><p class="MsoNormal">Finding this perfect match requires a strong relationship between people - a partnership, one that allows you to fulfil your potential; whether it's us and you or you and your new employer.</p><p class="MsoNormal"><span>We are Oliver James and we bring people together through building and enhancing career-elevating relationships, that will stand the test of time. </span> </p
+        ></blockquote>
+            </div>
+        </section>
+           </section>
+        <section id="relocate" class="section ">
+            
+            <div class="container-fluid wrapper">
+                <div class="relocate-wrapper">
+                    <figure class="bg-img right ">
+                        <img alt="OJ Webinar | Breaking down barriers: How to inclusively hire, attract and onboard disabled talent" src="https://www.oliverjames.com/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeWUxRXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--2b31517ecd3afe0ca419a63fb50439d159d40259/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9VWTI5dFltbHVaVjl2Y0hScGIyNXpld2c2QzNKbGMybDZaVWtpRFRRNE1IZ3pOemRlQmpvR1JWUTZER2R5WVhacGRIbEpJZ3REWlc1MFpYSUdPd2RVT2dsamNtOXdTU0lRTkRnd2VETTNOeXN3S3pBR093ZFUiLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--94efdcb62f01bf619779f65ab1b3d1cf4a3085f9/image-2021-07-21T13-57-51.158Z.png" />
+                    </figure>
+                    <div class="relocate-content">
+                        <header class="section-header">
+                            <h1>Secure your space on the next OJ Webinar </h1><p>Breaking down barriers: How to inclusively hire, attract and onboard disabled talent | Wednesday 11 Aug | 1pm </p>
+                        </header>
+                        <footer class="section-footer">
+                            <a href="https://teams.microsoft.com/registration/ycr4nhB-i0iDnhclga5a-w,FCqvbM-Im0eFI1_evBiFYA,xYb9wO_7TUC0pfLHVB7gYw,W0awyU3YfUmH3HyznvjmHg,PJYw1bHXXkek8CrqmsKHlA,d_z3AMIZg0yM-ZHjwFVKCQ?mode=read&amp;tenantId=9ef8cac9-7e10-488b-839e-172581ae5afb" class="button secondary ">Sign-up </a>
+                            <a href="https://teams.microsoft.com/registration/ycr4nhB-i0iDnhclga5a-w,FCqvbM-Im0eFI1_evBiFYA,xYb9wO_7TUC0pfLHVB7gYw,W0awyU3YfUmH3HyznvjmHg,PJYw1bHXXkek8CrqmsKHlA,d_z3AMIZg0yM-ZHjwFVKCQ?mode=read&amp;tenantId=9ef8cac9-7e10-488b-839e-172581ae5afb" class="button third ">More info</a>
+                        </footer>
+                    </div>
+                </div>   
+            </div>
+        </section>
+                <footer id="footer" class="footer ">
+           <div class="container-fluid wrapper">
+                <div class="row">
+                    <div class="col-md-3">
+                        <header>
+                            <h3>Sitemap</h3>
+                        </header>
+                        <ul class="format navigation_list"><li class="dropdown-item"><a href="https://www.oliverjames.com/work-with-oj" target="_self" class="nav-link">Work with OJ</a></li><li class="dropdown-item"><a href="https://www.oliverjames.com/oj-hub" target="_self" class="nav-link">OJ Hub</a></li><li class="dropdown-item"><a href="https://www.oliverjames.com/professionals" target="_self" class="nav-link">OJ Professionals</a></li><li class="dropdown-item"><a href="https://www.oliverjames.com/consulting" target="_self" class="nav-link">OJ Consulting</a></li><li class="dropdown-item"><a href="https://www.oliverjames.com/exec" target="_self" class="nav-link">OJ Executive</a></li><li class="dropdown-item"><a href="https://www.oliverjames.com/our-offices" target="_self" class="nav-link">Contact</a></li></ul>
+                    </div>
+                    <div class="col-md-3">
+                        <header>
+                            <h3>Disciplines</h3>
+                        </header>
+                        <ul class="format footer-disciplines">
+                                         <li>
+                                            <a href="https://www.oliverjames.com/disciplines/accountancy-and-finance">Accountancy &amp; Finance</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.oliverjames.com/disciplines/technology">Technology</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.oliverjames.com/disciplines/actuarial">Actuarial</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.oliverjames.com/disciplines/risk-and-compliance">Risk &amp; Compliance</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.oliverjames.com/disciplines/transformation-and-change-management">Transformation &amp; Change Management</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.oliverjames.com/disciplines/underwriting-and-claims">Underwriting &amp; Claims</a>
+                                        </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <header>
+                            <h3>Help</h3>
+                        </header>
+        <ul class="format navigation_list"><li class="dropdown-item"><a href="https://www.oliverjames.com/terms-and-conditions" target="_self" class="nav-link">Disclaimer</a></li><li class="dropdown-item"><a href="https://www.oliverjames.com/legal_documents/privacy_policy" target="_self" class="nav-link">Privacy Policy</a></li><li class="dropdown-item"><a href="https://www.oliverjames.com/legal_documents/first_opt_in" target="_self" class="nav-link">Transparency Notice</a></li><li class="dropdown-item"><a href="https://www.oliverjames.com/modern-slavery-policy" target="_self" class="nav-link">Modern Slavery Policy</a></li></ul>
+                    </div>
+                    <div class="col-md-3">
+                        <header>
+                            <h3>Accreditations​</h3>
+                        </header>
+                        <figure>
+                            <figure><img src="./images/_de244fad-1595925231594.png" style="max-width:100%" alt="enei tide accreditation logo" /></figure><figure><img src="./images/apsco iso logo.png" style="max-width:100%" data-src="https://www.oliverjames.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNHRJQnc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--0490ce32a159cc5aeed12363605bd4767023a1f8/apsco%20iso%20logo.png" /></figure><p>​</p>
+                        </figure>
+                        <ul class="format social-links">
+                            <li><a href="https://www.linkedin.com/company/oliver-james-associates/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <!-- <li><a href="https://www.glassdoor.co.uk/Overview/Working-at-Oliver-James-Associates-EI_IE795860.11,34.htm" target="_blank"><svg class="glassdoor-svg" xmlns="http://www.w3.org/2000/svg" width="41" height="40"><title>Glassdoor</title><g fill="none"><path fill="#fff" d="M23.9 27.22v-11.4c0-.06.03-.1.1-.1h2.57c.05 0 .1.04.1.1v11.4A2.78 2.78 0 0 1 23.89 30h-8.34c-1.54 0-2.78-1.24-2.78-2.78h11.1zm0-16.66c1.52 0 2.77 1.24 2.77 2.77h-11.1v11.4c0 .07-.06.1-.12.1h-2.57c-.06 0-.1-.03-.1-.1v-11.4c0-1.53 1.24-2.77 2.78-2.77h8.33z"></path></g></svg></a></li> -->
+                            <li><a href="https://www.xing.com/companies/oliverjamesassociates" target="_blank"><i class="fa fa-xing" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/OJAssociates" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.instagram.com/ojassociates/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <p>Copyright 2021 Oliver James Associates Limited. All rights reserved.</p>
+                </div>
+           </div> 
+        </footer>
+            </div>
+            <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&amp;display=swap" rel="stylesheet" />
+        </body>
+</aura:component>

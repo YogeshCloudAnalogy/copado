@@ -1,0 +1,79 @@
+<apex:page >
+    <style>
+          body {
+                background-color: #ECECD4;
+                font-family: Arial, sans-serif;
+                }
+                #content {
+              
+                background-color: #ccccb3;
+                padding: 1%;
+                }
+                
+                h1 { font-size: 32px; }
+        		h2 { font-size: 20px; }
+                li { margin-bottom: .5em; }
+                .element {
+                position: relative;
+                }
+                .element:after {
+                display: block;
+                font-size: 12px;
+                color: rgba(0,0,0,.3);
+                position: absolute;
+                right: 10px;
+                bottom: 5px;
+                }
+        .box {
+        padding: 30px;
+        border: 1px solid #fff;
+        max-width: 450px;
+        cursor: pointer;
+        color: #fff;
+        font-size: 26px;
+        text-align: center;
+        }
+        
+        .outer {
+        background-color: #3977ad;
+        margin-bottom: 30px;
+        width:50%;
+        margin: 2% auto;
+        }
+        
+        .middle {
+        background-color: #fe3266;
+        }
+        
+        .inner {
+        background-color: #1f2531;
+        }
+    </style>
+    <div id="content" style="text-align:center">
+        <h1 style="text-align:center">CurrentTarget VS Target</h1>
+    </div>
+    <div class="outer box" onclick="handleClick(event)">
+        <div class="middle box">
+            <div class="inner box">Click me</div>
+        </div>
+    </div>
+    <h2>
+        Target------
+        <span id="target"></span>
+    </h2>
+    <br/>
+    <h2>
+        current Target------
+        <span id="current"></span>
+    </h2>
+    <script>
+    
+    function handleClick(e) {
+        console.clear();
+        document.getElementById("target").innerHTML = e.target.className;
+        document.getElementById("current").innerHTML = e.currentTarget.className;
+        console.log('target', e.target.className);
+        console.log('currentTarget', e.currentTarget.className);
+    }
+    </script>
+</apex:page>

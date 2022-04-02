@@ -1,0 +1,6 @@
+<aura:component implements="lightning:availableForChatterExtensionComposer"
+controller="AccountController">
+<aura:handler name="init" value="{!this}" action="{!c.init}"/>
+<aura:attribute name="accList" type="List"/>
+
+</aura:component>

@@ -1,0 +1,21 @@
+<aura:component implements="lightning:availableForChatterExtensionRenderer">
+    <aura:attribute name="mapMarkers" type="Object[]"/>
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+<div class="container">
+<a target="_blank" href="{!v.payload.url}">
+<div class="{! (v.variant == 'FEED' ? 'itemContainerBorder' : '') + '
+itemContainer'}">
+<div class="itemLeft">
+<img class="itemIcon" src="{!v.payload.icon}"></img>
+</div>
+<div class="itemRight">
+<div class="itemTitle">{!v.payload.title}</div>
+<div class="itemSubtitle">{!v.payload.subtitle}</div>
+<div class="itemDescription">Case Number: {!v.payload.caseNo}</div>
+    <lightning:map
+                   mapMarkers="{! v.mapMarkers }" />
+</div>
+</div>
+</a>
+</div>
+</aura:component>

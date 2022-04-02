@@ -1,0 +1,18 @@
+<apex:page id="PT_Account" showHeader="false" sideBar="false" tabStyle="Account" standardController="Account">
+	<apex:includeLightning />
+	<div id='PinTags_Div'></div>
+	<script>
+	 let baseUrl = location.href;
+	 if ( baseUrl.indexOf('lightning.force.com') > 0 ) {
+	 } else {
+		let recordId1 = '{!$CurrentPage.parameters.id}';
+		$Lightning.use('LightningTags:LightningTags_App', function () {
+			$Lightning.createComponent('LightningTags:LightningTags_Component',
+				{'recordId': recordId1, 'isAccessFromParent':true},
+				'PinTags_Div',
+				function (cmp) {
+				}
+			);		});
+	}
+	</script>
+</apex:page>

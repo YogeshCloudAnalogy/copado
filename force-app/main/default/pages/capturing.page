@@ -1,0 +1,103 @@
+<apex:page >
+    <html>
+        <head>
+            <style>
+                body {
+                background-color: #ECECD4;
+                font-family: Arial, sans-serif;
+                }
+                #content {
+                
+                background-color: #ccccb3;
+                padding: 1%;
+                }
+                
+                h1 { font-size: 20px; }
+                li { margin-bottom: .5em; }
+                .element {
+                position: relative;
+                }
+                .element:after {
+                display: block;
+                font-size: 12px;
+                color: rgba(0,0,0,.3);
+                position: absolute;
+                right: 10px;
+                bottom: 5px;
+                }
+                #outer-container {
+                padding: 2% 1%;
+                background-color: #BDB76B;
+                width: 44%;
+                
+                margin: 2% auto;
+                border-radius: 8px;
+                box-shadow: -2px 2px 9px rgba(0,0,0,0.6);
+                }
+                #outer-container:after {
+                content: '#outer-container';
+                }
+                #inner-container {
+                padding: 1% 2%;
+                background-color: #F0E68C;
+                width: 80%;  
+                display: block;
+                margin: 0 auto;
+                border-radius: 6px;
+                box-shadow: -2px 2px 9px rgba(0,0,0,0.2);
+                text-align: center;
+                }
+                #inner-container:after {
+                content: '#inner-container';
+                }
+                #paragraph {
+                padding: 4% 8%;
+                background-color: #DAA520;
+                display: inline-block;
+                cursor: pointer;
+                margin: 10px auto;
+                text-align: center;
+                border-radius: 4px;
+                box-shadow: -2px 2px 9px rgba(0,0,0,0.5);
+                }
+                #paragraph:after {
+                content: '#paragraph';
+                }
+                
+                #code {
+                clear: both;
+                }
+                
+                #console {
+                width: 20%;
+                float: left;
+                }
+                #console ol,
+                #console p {
+                padding-left: 30px;
+                font-size: 13px;
+                }
+            </style>
+        </head>
+        <body>
+            <div id="content" style="text-align:center">
+                <h1 style="text-align:center">Event Bubbling VS Event Capturing</h1>
+            </div>
+            <div id="outer-container" class="element">
+                <span id="inner-container" class="element">
+                    <p id="paragraph" class="element">Paragraph Element</p>
+                </span>
+            </div>
+        </body>
+    </html>
+    
+    <script>
+    // Script to click event handler to capture on each element
+    for(let elem of document.querySelectorAll('*')) {
+        console.log(elem);
+        elem.addEventListener("click", e =>  alert('capturing-->'+elem.tagName), true);
+        elem.addEventListener("click", e =>  alert('bubling--->'+elem.tagName), false);
+        
+    }
+    </script>
+</apex:page>
